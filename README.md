@@ -42,11 +42,11 @@
 3. **Menjalankan Notebook Eksperimen**
    Buka Jupyter Notebook lalu pilih salah satu dari folder `notebooks/`:
 
-   * YOLOv8 Medium.ipynb
-   * YOLOv9 Compact.ipynb
-   * YOLOv9 Extensive.ipynb
-   * YOLOv9 Extensive with HE.ipynb
-   * YOLOv9 Extensive with KFOLD.ipynb
+   * YOLOv8 Medium
+   * YOLOv9 Compact
+   * YOLOv9 Extensive
+   * YOLOv9 Extensive with HE
+   * YOLOv9 Extensive with KFOLD
 
 4. **Menjalankan Aplikasi**
    Jika aplikasi menggunakan Streamlit:
