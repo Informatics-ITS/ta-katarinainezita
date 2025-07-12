@@ -1,75 +1,102 @@
 # 🏁 Tugas Akhir (TA) - Final Project
 
-**Nama Mahasiswa**: [Nama Lengkap]  
-**NRP**: [Nomor Registrasi Pokok]  
-**Judul TA**: [Judul Tugas Akhir]  
-**Dosen Pembimbing**: [Nama Dosen]  
-**Dosen Ko-pembimbing**: [Nama Dosen]
+**Nama Mahasiswa**: Katarina Inezita Prambudi  
+**NRP**: 5025211148  
+**Judul TA**: Segmentasi Citra Tulang Alveolar dan Kanal Mandibula pada Citra CBCT Menggunakan Metode YOLOv9   
+**Dosen Pembimbing**: Prof. Dr. Eng. Chastine Fatichah, S.Kom., M.Kom.  
+**Dosen Ko-pembimbing**: Dini Adni Navastara, S.Kom., M.Sc.
 
----
 
-## 📺 Demo Aplikasi  
-Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):  
+## 📺 Demo Aplikasi
 
-[![Demo Aplikasi](https://i.ytimg.com/vi/zIfRMTxRaIs/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)  
+[![Demo Aplikasi](https://i.ytimg.com/vi/zIfRMTxRaIs/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
 *Klik gambar di atas untuk menonton demo*
 
+> Gantilah `VIDEO_ID` dengan ID video demo YouTube Anda jika tersedia. Bila belum ada, bagian ini bisa dihapus sementara.
+
 ---
 
-*Konten selanjutnya hanya merupakan contoh awalan yang baik. Anda dapat berimprovisasi bila diperlukan.*
+## 🛠 Panduan Instalasi & Menjalankan Software
 
-## 🛠 Panduan Instalasi & Menjalankan Software  
+### Prasyarat
 
-### Prasyarat  
-- Daftar dependensi (contoh):
-  - Python 3.10+
-  - Node.js v18+
-  - MySQL 8.0
-  - [Lainnya...]
+* Python 3.10 atau lebih baru
+* pip (Python package manager)
+* (Opsional) virtual environment
 
-### Langkah-langkah  
-1. **Clone Repository**  
+### Langkah-langkah
+
+1. **Clone Repository**
+
    ```bash
-   git clone https://github.com/Informatics-ITS/TA.git
+   git clone https://github.com/katarinainezita/TA-Segmentasi-YOLOv9.git
+   cd TA-Segmentasi-YOLOv9
    ```
+
 2. **Instalasi Dependensi**
+
    ```bash
-   cd [folder-proyek]
-   pip install -r requirements.txt  # Contoh untuk Python
-   npm install  # Contoh untuk Node.js
+   pip install -r requirements.txt
    ```
-3. **Konfigurasi**
-- Salin/rename file .env.example menjadi .env
-- Isi variabel lingkungan sesuai kebutuhan (database, API key, dll.)
-4. **Jalankan Aplikasi**
+
+3. **Menjalankan Notebook Eksperimen**
+   Buka Jupyter Notebook lalu pilih salah satu dari folder `notebooks/`:
+
+   * YOLOv8 Medium.ipynb
+   * YOLOv9 Compact.ipynb
+   * YOLOv9 Extensive.ipynb
+   * YOLOv9 Extensive with HE.ipynb
+   * YOLOv9 Extensive with KFOLD.ipynb
+
+4. **Menjalankan Aplikasi**
+   Jika aplikasi menggunakan Streamlit:
+
    ```bash
-   python main.py  # Contoh untuk Python
-   npm start      # Contoh untuk Node.js
+   streamlit run app.py
    ```
-5. Buka browser dan kunjungi: `http://localhost:3000` (sesuaikan dengan port proyek Anda)
 
 ---
 
-## 📚 Dokumentasi Tambahan
+## 🧪 Contoh Dataset untuk Uji Coba Aplikasi
 
-- [![Dokumentasi API]](docs/api.md)
-- [![Diagram Arsitektur]](docs/architecture.png)
-- [![Struktur Basis Data]](docs/database_schema.sql)
+Untuk keperluan pengujian aplikasi, tersedia folder `dataset_sample/` yang berisi contoh citra CBCT yang dapat digunakan untuk segmentasi menggunakan model YOLOv9.
 
 ---
 
-## ✅ Validasi
+## 📊 Hasil Evaluasi
 
-Pastikan proyek memenuhi kriteria berikut sebelum submit:
-- Source code dapat di-build/run tanpa error
-- Video demo jelas menampilkan fitur utama
-- README lengkap dan terupdate
-- Tidak ada data sensitif (password, API key) yang ter-expose
+Hasil evaluasi dari semua model dan skenario disimpan dalam:
+
+📄 `outputs/model_evaluation_results.xlsx`
+
+---
+
+## 🔍 Model Terlatih
+
+Model YOLOv9 terbaik disimpan di:
+
+```
+models/best.pt
+```
+
+---
+
+
+## 📌 Informasi Dataset
+
+Dataset CBCT digunakan dalam tugas akhir ini bersumber dari Roboflow dan telah dianotasi oleh dokter gigi ahli. Seluruh data digunakan hanya untuk tujuan akademik dan penelitian.
 
 ---
 
 ## ⁉️ Pertanyaan?
 
-Hubungi:
-- Penulis: [email@mahasiswa]
-- Pembimbing Utama: [email@pembimbing]
+Silakan hubungi:
+
+* Penulis: [5025211148@student.its.ac.id](mailto:5025211148@student.its.ac.id)
+* Pembimbing: [chastine@if.its.ac.id](mailto:chastine@if.its.ac.id)
+
+---
+
+## 📄 Lisensi
+
+MIT License — silakan lihat file `LICENSE` untuk informasi selengkapnya.
