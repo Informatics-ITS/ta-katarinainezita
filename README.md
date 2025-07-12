@@ -73,11 +73,9 @@ Hasil evaluasi dari semua model dan skenario disimpan dalam:
 
 ## 🔍 Model Terlatih
 
-Model YOLOv9 terbaik disimpan di:
+Model YOLOv9 terbaik disimpan di: 
 
-```
-models/best.pt
-```
+🔗 [Download model best.pt (Google Drive)](https://drive.google.com/drive/folders/1vpLnA6EA_z33_rAwR4fb-S8ptaLLqzNC?usp=sharing)
 
 ---
 
