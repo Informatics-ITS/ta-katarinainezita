@@ -9,8 +9,9 @@
 
 ## 📺 Demo Aplikasi
 
-[![Demo Aplikasi](img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a42668a3-00ba-4d59-a177-c63a6c69ce02")](https://www.youtube.com/watch?v=-g9b4dRYBMc)
+[![Demo Aplikasi](https://github.com/user-attachments/assets/a42668a3-00ba-4d59-a177-c63a6c69ce02)](https://www.youtube.com/watch?v=-g9b4dRYBMc)
 *Klik gambar di atas untuk menonton demo*
+
 
 
 ---
